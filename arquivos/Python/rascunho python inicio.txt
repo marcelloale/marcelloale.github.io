@@ -1,0 +1,171 @@
+- Como funciona o Computador
+Dispositivo Eletronico Digital
+e a comunicação ocorre por meio de programas
+Entrada e Saida 
+
+- Programação
+quanto maior a abstração mais alto nivel
+linguagem compiladas
+(todo o programa escrito criar um intermediaro) 
+e interpretadas (comando individuais pequenas partes)
+
+niveis de abstração
+Alto nivel
+Comando visuais: Scratch, Unity3D, TouchDesigner *por blocos
+Comandos interpretados: OOP, Java, C++
+Comando de Processador: Assembly MOV ADD
+Comando Binaros: 0,1
+Circuitos Eletronicos
+Baixo nivel
+
+
+Python 🐍
+
+Idealizada e desenvolvida por Guido Van Rossum, matemático holandês, no início dos anos 90, o Python foi criado com o objetivo de otimizar a leitura de códigos e estimular a produtividade de quem os cria, seja este um programador ou qualquer outro profissional.
+
+Uma das linguagens mais utilizadas. Hoje o responsável é PSF Python Software Foundation assim como GNU é uma organização sem fins lucrativos fundada em 6 de Março de 2001 que detém os direitos de propriedade intelectual por trás da linguagem de programação Python. 
+
+Motivos 📓
+
+Livre e de código aberto: Python está sob a licença Python Software Foundation License, que é similar a GPL com exceção de que pode-se distribuir os binários da linguagem sem necessitar anexar os fontes;
+
+Multiplataforma: Por ser uma linguagem interpretada, Python roda em qualquer sistema que possua o seu interpretador.
+
+Alto Nível: Python é uma linguagem de alto nível, de desenvolvimento rápido, é inteligível como o Inglês e sempre evita o implícito;
+
+Fácil de aprender: O Python está se tornando popular porque é fácil de aprender em comparação com outras. Sua sintaxe mais simples utiliza o inglês simples com menos complexidade. Por isso, é fácil de codificar e fácil de desenvolver.
+
+Python é DEVOPS: Para um profissional de infraestrutura de T.I. e necissata de ferramenta na área de programação, Python é a linguagem pode ser a mais indicada.
+É uma linguagem capaz de resolver problemas de infraestrutura e começar a enxergar a sua infraestrutura como código pode ser o caminho mais fácil para um SysAdmin. Com ela, é possível fazer scripts que ajudam qualquer um e ainda é possível construir aplicações Web ou corporativas com Python. Sendo Python é uma linguagem que navega muito bem no DevOps.
+
+Tipagem dinâmica forte: Isso quer dizer que você pode atribuir a uma variável qualquer tipo de valor e em qualquer momento do seu código fonte. Porém, Python não permite que você tente concatenar uma string com um valor inteiro, por exemplo;
+
+Sintaxe: A sintaxe do Python é uma das suas mais fundamentais características. Em Python um bloco de código (por exemplo um if)
+é feito através de indentações. Isso força o desenvolvedor a indentar seu código fonte e garante uma boa legibilidade. Além de reduzir o uso de caracteres “esotéricos” como ->, ::, :=, {, }, etc. com Python você é capaz de escrever um for que testa uma determinada sequência e monta uma lista com (acredite) uma linha apenas;
+
+Bibliotecas extensas: A biblioteca padrão Python é extensa com módulos e funções ricas que ajudam a completar seus projetos mais rapidamente em vez de escrever código a partir do zero. Você pode encontrar código reutilizável para processos como manipulação de imagem, testes unitários, CGI e muito mais. Exemplos incluem Django, Flask, NumPy, e SciPy.
+
+Frameworks: Além de multiplataforma e multiparadigma, com o Python você é capaz de desenvolver para qualquer tipo de ambiente, seja desktop, web ou móvel. Para isso o Python conta com excelentes frameworks que auxiliam desde o desenvolvimento web, até o desenvolvimento de jogos ou algorítmos científicos de cálculos avançados;
+
+Mercado: O Python vem conquistando amplamente seu espaço no mercado com soluções criativas, além de proporcionar alto nível de produtividade. Utilizados nas maiores empresas tec Google Amazon Meta etc.
+
+Documentação: Este é outro ponto forte da linguagem. No site da comunidade brasileira (pythonbrasil.org.br) você tem uma lista de fontes de estudos que é só um aperitivo do imenso conteúdo que você pode encontrar na Web;
+
+
+Onde python pode ser usado? 🖥
+
+-Desenvolvimento Web:
+Django, Flask, Pyramid, Tornado...(frameworks)
+
+-Desenvolvimento Desktop:
+Tkinter, PyQT, Kivy (interface gui)
+
+- Ciencia de dados:
+SciPy, Pandas, IPython...
+
+-Automação:
+Desenvolvimento de scripts para automação de tarefas.
+
+
+-Teoria 🐍
+PLR (The Python Language Reference) o manual de referência descreve a sintaxe e a “semântica central” da linguagem pode acessar tem em portugues. é A teoria do Python
+-Implementação
+Apartir da PLR foram criadas as implementações de python, foram criados programas capazes de interpretar codigo seguindo a teoria
+CPython implementação oficial
+IronPython (roda em .NET)
+Jython (roda em JVM(java virtual machine))
+PyPy (implementação com JIT compiler)
+Stackless Python (variação de CPython com suporte a microthreads)
+MicroPython (roda em micro controllers)
+-Ecossistema
+CPython tem todo um ecossistema em torno dele que é o que faz o python um linguagem viva ja a 30 anos
+Python tem muitas comunidades, varias comunidades espalhadas pelo mundo como Python Brasil, India, China  alem disso comunidades de nincho como PyLadies, Python para Web, python para finanças, python para embarcados.
+-Dono
+Isso tudo é possivel graças a PSF que fazer livre e gratuito.
+-Pacotes e Ferramentas
+Alguem desenvolver e disponibiliza para ser usado exemplos framework, tambem tem ferramentas para instalar bibliotecas criar pacotes python para escrever os codigos editores e tudo mais.
+você visualizar toda isso no pypi.org
+
+especie de rank das ide mais pesquisada no google e ODE que sao IDE online
+https://pypl.github.io/IDE.html
+
+O que é IDE? 📲
+
+Ambiente de desenvolvimento integrado ou  Integrated Development Environment
+
+Possuem enormes recursos que facilitam o desenvolvimento de aplicações
+
+Simplifica certas funções do dia a dia
+
+Traz comodidade para o progamador deixa o desenvolvimento mais rapido.
+
+
+Estudos de python 🗂
+
+-Plataforma Python
+
+Google Colab
+
+Replit
+
+Gitpod
+
+Programiz
+
+-Conteudo em video - Canais sobre python 
+
+canal: Curso em video - python Gustavo Guanabara
+
+
+canal: Dunossauro - Eduardo Mendes - curso de python com selenium (web)
+
+canal: Dev Aprender - Jhonatan de Souza - exemplo de videos de automação bem mais na pratica da pra assistir que ele ensina tudo etc
+
+canal: FreeCodeCamp - video de 4hrs ingles* https://www.youtube.com/watch?v=rfscVS0vtbw
+
+canal: CodeShow - Bruno Rocha - Engenheiro de Software na Red Hat compartilha dicas de Python e Linguagem Rust
+
+canal: LinuxTips - Playlist com a Python Week 2022 com Bruno Rocha e Jeferson Fernando
+
+-Sites
+
+Microsoft: https://docs.microsoft.com/pt-br/learn/modules/intro-to-python/
+
+Scrimba: https://scrimba.com/learn/python (nao precisa se cadastrar)
+
+Dio.me: https://web.dio.me/course/introducao-a-programacao-com-python/
+
+Educative.io: https://www.educative.io/courses/learn-python-3-from-scratch (Python do Zero em ingles pode usar tradução do chrome)
+
+Python Brasil: https://python.org.br/introducao/ (tem indicação de cursos)
+
+-Livros
+
+Curso Intensivo de Python: Uma introdução prática e baseada em projetos à programação, de Eric Matthes
+
+Automatize tarefas maçantes com Python: Programação prática para verdadeiros iniciantes, de Al Sweigart
+
+Começando A Programar Em Python Para Leigos, de John Paul Mueller
+
+Use a Cabeça! Python ― 2ª Edição, de Paul Barry
+
+Python Fluente: Programação Clara, Concisa e Eficaz, de Luciano Ramalho (BR)
+
+Pense em Python: Pense Como um Cientista da Computação, de Allen Downey
+
+Introdução à Programação com Python: Algoritmos e Lógica de Programação Para Iniciantes, de Nilo Ney Coutinho Menezes (BR)
+
+**
+PensePython site interativo do livro
+https://panda.ime.usp.br/pensepy/static/pensepy/01-Introducao
+
+**
+fazer Dojos resolvendo problemas com python
+
+
+outras Referencias: 
+http://pythonparaleigos.blogspot.com/2018/01/por-que-estudar-python.html
+
+https://kinsta.com/pt/blog/tutoriais-python/
+
+https://pypi.org/project/wikipedia/
