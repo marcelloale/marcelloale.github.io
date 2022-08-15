@@ -1,0 +1,158 @@
+#YAML
+
+Você já ouviu falar na sigla YAML?
+
+#2##############################################
+pronucia Iémou
+Yet Another Markup Language
+depois mudado pra "YAML Ain't Markup Language"
+(não é linguagem de marcação)
+
+O nome o distingue de linguagens de marcação simples, como HTML . Os arquivos que contêm YAML têm a extensão de arquivo " .yaml ."
+
+Um padrão de serialização(codificação de dados) de dados amigável para qualquer linguagem de programação.
+
+#3#############################
+
+A primeira estrutura YAML foi escrita em Perl em 2001 por Clark Evans e ele levou essa proposta para Oren Ben-Kiki e Ingy döt Net após 3 anos de trabalho de design colaborativo no início de 2004 A especificação YAML 1.0 foi publicada. O projeto foi inicialmente enraizado no trabalho de Clark e Oren na lista de discussão (para simplificar XML) e no módulo de serialização de texto simples de Ingy para Perl. A linguagem se inspirou muito em muitas outras tecnologias e formatos que a precederam. como XML, C, Python, Perl:
+
+Ele é usado para organizar e descrever informações, semelhante a outras linguagens como XML. e Ele se baseia em outro formato de serialização de dados popular o JSON .
+
+
+#4#################################################
+
+O YAML foi criado especificamente para funcionar bem em casos de uso comum, como: arquivos de configuração, arquivos de log, mensagens entre processos, compartilhamento de dados entre linguagens, persistência de objetos e depuração de estruturas de dados complexas. Quando os dados são fáceis de visualizar e entender, a programação se torna uma tarefa mais simples.
+
+ele funciona muito bem quando os dados precisam ser descritos de maneira ordenada. Por exemplo:
+:Informações sobre usuários , como nome de usuário , senha e endereço de e-mail , semelhantes a um banco de dados .
+:Configuração para um aplicativo , como configurações do usuário.
+:Descrever objetos 3D a serem importados para aplicativos como Blender e Unity.
+:é tambem frequentemente usada para arquivos de configuração, como especificações de API aberta ou pipelines de CI/CD e infraestrutura como codigo IaC.
+:O YAML também é utilizado pelo Ansible para fazer processos de automação e para recursos e implantações do Kubernetes.
+:Uma vantagem de utilizar YAML é que os documentos YAML podem ser adicionados ao controle de origem, como o Github, para que as alterações possam ser seguidas e examinadas.
+:Outro caso de uso é o arquivo Docker Compose
+
+
+#5####################################################
+
+exemplo
+Como podemos ver, não existem tags predefinidas, as próprias propriedades delimitam os dados, diferentemente do XML que possuí tags explicitas, o YAML se baseia na indentação e marcações mínimas para definir as informações.
+
+
+#6#########################
+Principais Caracteristicas
+
+Facil Legibilidade
+Facil aprendizagem
+Unicode UTF-8
+case sensitive
+flexivel e versatil
+
+
+Pontos Principais
+
+:YAML é uma linguagem orientada a dados que possui recursos derivados de Perl, C, HTML e outras linguagens.
+:O YAML é um superconjunto derivado do JSON que vem com várias vantagens internas, como comentários, auto-referência e suporte para tipos de dados complexos.
+:Vários pacotes de software implementaram o YAML para criar poderosas ferramentas de gerenciamento de configuração.
+:Infraestrutura de alto desempenho
+
+O grande diferencial e o que realmente distingue o YAML é a sua sintaxe minimalista. Diversos recursos são semelhantes a outras tecnologias, porém, a facilidade de montar e entender a sua sintaxe faz com que ele ganhe atributos.
+
+############
+Comparações
+
+YAML vs. JSON vs. XML 
+
+Em relação ao JSON, o YAML se destaca por ser muito mais interessante para utilização em aplicativos que tenham diversos tipos de dados com pipelines.
+
+O YAML também sai ganhando por sua utilização ser muito mais viável quando outros membros de uma equipe de trabalho atuam com dados, tendo em vista que ele é bem mais legível que o JSON. 
+
+Porém, o JSON é a melhor opção para o desenvolvimento web, já que se adequa melhor a formatos de serialização, bem como possui mais afinidade com a transmissão de dados em conexões que utilizam o HTML. Dessa forma, mesmo não sendo tão legível, o JSON ganha espaço em aplicações Web.
+
+Já em relação ao XML, podemos mencionar que ele não é tão legível e descomplicado como o YAML. Além disso, a grande diferença entre eles é que o YAML não se propõe a ser uma linguagem de programação, enquanto o XML faz isso e ainda conta com mais recursos, como atributos de tag, por exemplo. 
+
+Sendo assim, o XML é mais interessante quando os projetos são mais complexos e não precisam ser de fácil acesso e ter alta legibilidade. Esse tipo de projeto, no geral, prefere ter mais recursos, como o controle fino sobre validação, namespace, entre outros.
+
+
+##############
+comentarios de internet
+O mercado atual já entende que a adoção de DevOps e de sistemas de virtualização são cada vez mais importantes, e como o YAML se aplica a isso, é claro que profissionais com esse conhecimento são muito procurados.
+
+YAML não é uma linguagem, mas um formato, assim como JSON. Você não tem muito a aprender e é perfeito. Os outros idiomas também servem para o que você deseja. Eu recomendo que você os aprenda bem e saiba como eles se aplicam à automação residencial.
+
+motivos
+
+ansible é muito fácil de aprender: yaml + su dsl, além de quase nada intrusivo
+
+Sim, eu sei: o Kubernetes usa YAML e o Jenkins também usa YAML. Microsserviços e automação, a pedra angular do paradigma de sistemas hoje. O que YAML terá que aprender? Definitivamente. O que eu tenho que gostar? Bem, não, já que eu não gosto de ir trabalhar, mas é o que é.
+##############
+
+
+-videos
+
+LinuxTips
+https://www.youtube.com/watch?v=JOtIVGy1SgE&t=1s
+
+LinuxTips
+DESCOMPLICANDO O YAML - APRENDA YAML DE UMA VEZ POR TODAS!
+
+Caio Delgado 
+https://www.youtube.com/watch?v=SHFqHPId4-c
+
+Sobrinho de TI (USA EXEMPLO NO AZURE DEVOPS)
+https://youtu.be/sZ3c3RvxrwY
+
+Automação de Casa (ingles)
+https://youtu.be/nETF43QJebA
+
+
+
+
+-sites
+
+https://miyake-akio.medium.com/introdu%C3%A7%C3%A3o-b%C3%A1sica-ao-yaml-para-ansiosos-2ac4f91a4443
+
+https://learnxinyminutes.com/docs/pt-br/yaml-pt/
+
+https://www.redhat.com/pt-br/topics/automation/what-is-yaml
+
+https://www.cloudmotion.com.br/blog/2020/01/23/criando-build-agendado-no-yaml/
+
+https://yaml.org/spec/1.2.2/
+
+https://twitter.com/KenjiMaeda16/status/1482151633488338944?s=20&t=I8WuHmAn2f0csg60tU7MXA
+
+https://github.com/kenjimaeda54/yaml-feature
+
+SHELL
+https://github.com/kenjimaeda54/shell_script
+
+
+
+
+
+-referencias:
+
+https://dev.to/paulasantamaria/introduction-to-yaml-125f
+
+https://faun.pub/all-you-need-to-know-about-yaml-3dbfbf9f19a4
+
+https://www.computerhope.com/jargon/y/yaml.htm
+
+https://miyake-akio.medium.com/introdu%C3%A7%C3%A3o-b%C3%A1sica-ao-yaml-para-ansiosos-2ac4f91a4443
+
+https://joshuawebdev.wordpress.com/2019/01/05/xml-json-yaml-e-serializacao-de-objetos-parte-1/
+
+https://marquesfernandes.com/tecnologia/arquivo-yaml-o-que-e-e-para-que-serve/
+
+
+
+https://www.impacta.com.br/blog/yaml-o-que-e-e-para-que-serve/
+
+https://www.treinaweb.com.br/blog/o-que-e-yaml
+
+https://www.electronicdesign.com/technologies/dev-tools/article/21800743/whats-the-difference-between-json-xml-and-yaml
+
+https://programming-techniques.com/ask-437-what-is-the-difference-between-yaml-and-json-when-to-prefer-one-over-the-other/
+
+https://www.csestack.org/yaml-vs-json-vs-xml-difference/

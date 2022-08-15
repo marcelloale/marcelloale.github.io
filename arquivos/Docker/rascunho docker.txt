@@ -1,0 +1,189 @@
+#Docker
+
+Provavelmente você ja ouviu falar sobre Docker.
+De forma rapida Docker é a plataforma ideal para executar aplicações em containers.
+--
+E o que é Containers?
+Simplificando, um contêiner é um ambiente isolado dentro de um servidor. Como exemplo: imagine um trem de carga com diversos containers de mercadorias. Se em um dos containers a mercadoria estragar, isso não vai afetar os outros containers, pois cada um deles está isolado e protegido. 
+é o agrupamento de uma aplicação junto com suas dependências, que compartilham o kernel do sistema operacional do host da máquina (virtual ou física) onde está rodando.
+--
+Containers são bem similares às máquinas virtuais, porém mais leves e mais integrados ao sistema operacional da máquina host, uma vez que compartilha o seu kernel, o que proporciona melhor desempenho por conta do gerenciamento único dos recursos.
+
+bem é muito comum que o conceito do Docker seja confundido com o de máquinas virtuais mas Docker é uma tecnologia de virtualização que possibilita o empacotamento de uma aplicação ou ambiente inteiro dentro de um contêiner.
+
+*a imagem de um container é bastante enxuta, havendo somente o necessário para o funcionamento da aplicação
+*ele será executado em da mesma forma porque é isolado no nível do processo e possui seu próprio sistema de arquivos.
+
+--
+Entao de onde sugiu o Docker e pq tao popular??
+O termo container nao é um conceito novo ja foi utilizado com containers Linux e Java(JVM) apesar de ter se popularizado nos dias de hoje com a ferramenta Docker
+E como o Docker conseguiu isso?
+Bem o Docker surgiu em 2013 quando Solomon Hykes, CEO da dotCloud apresentou uma palestra na 'PyCon' Conferecia de Desenvolvedores Python na California, e poucas semanas depois o projeto se tornou open source e através do Github teve contribuições de centenas de desenvolvedores que ajudaram a melhorar e disseminar a tecnologia que foi disruptiva para o mercado de TI mudando a forma de como as aplicações são disponibilizadas, dando praticidade, portabilidade e agilidade.
+
+Comunidade Docker e Docker Inc
+Projeto Open source
+2B+ Download de Imagens
+2000+ Contribudores
+40K+ Estrelas no GitHub 
+200K+ App Dockerizadas
+240 Meetups em 70 países
+95K Membros de Meetup 
+
+Docker Inc
+Hoje a empresa Docker é
+-Provedor de container como serviço
+Plataforma de integração para dev e ops
+Suporte técnico comercial
+-Patrocinado do projeto Docker
+Principal patrocinador do projeto Docker
+Suporta mantenedores do projeto
+
+--
+
+Ecossistema do Docker
+imagem da DockerCon 2015
+O ecossistema Docker é enorme. O Docker está em alta no mercado. Com o advento de ferramentas de aplicativos multicontêineres como Docker Compose, Docker Machine (crie hosts Docker em seu computador, em provedores de nuvem e dentro de seu próprio data center), Docker-swarm (clustering nativo para Docker, ferramentas futuras como Notary (segurando seus contêineres na nuvem), tecnologia Docker Open Container (runC) – um tempo de execução universal para contêineres do sistema operacional. System), o Docker certamente permanecerá por algum tempo.
+
+--
+
+Basico do Docker 
+
+-Docker Image
+A base de um Docker container
+-Docker Container
+A unidade padrão na qual o serviço de aplicativo reside
+-Docker Engine
+Cria, envia e executa contêineres Docker implantáveis em host físico ou virtual localmente, em um datacenter ou provedor de serviços em nuvem
+-Docker Registry
+On-premises registro para armazenamento e colaboração de imagens
+*Docker registry é um repositório de imagens para que você consiga subir (push) e baixar (pull) imagens dele, usamos ele com o comando: “docker pull mysql”*
+
+--
+Desafios
+
+Os containers do Docker são imensamente populares, mas como qualquer plataforma popular o Docker tem suas limitações e desafios.
+Não há dúvida de sua evolução foi impressionante nos últimos anos se transformando em uma plataforma rica em recursos e pronta para produção e implantação de aplicativos, pelo menos no Linux, mas ainda há espaço pra evoluir e superar os desafios que existem na plataforma Docker e no ecossistema de contêineres.
+
+Os aplicativos estão mudando: 
+antigamente as estruturas eram monolíticas, as mudanças eram lentas e necissades grandes servidores (locais),
+hoje os serviços são fracamente acoplados, Atualizado rapidamente, Muitos pequenos servidores (nuvem).
+
+Estrutura de desenvolvimento
+Ciclo do Desenvolvimento
+Development, Test & QA, Production, Scale Out
+Os recursos
+Developer Laptop, Virtual machines, server, server cluster, data center, disaster recovery, public cloud
+Os serviços
+Background Workers, Static Website, Static Website, User DB, Queue, Analytics DB, API Endpoint
+
+--
+
+Como chegamos ao Docker
+	Mudanças nas aplicações
+
+	Desafios
+
+	Solução
+
+	Visão desenvolvedor e Sysadmin
+
+	Docker Toolbox
+
+Como funciona
+	Containers vs VMs
+
+	Camadas
+
+	Arquitetura
+
+Comandos basicos
+
+-pull
+-images
+-inspect
+-run [opções] -volume
+-ps
+-exec [opções]
+-outros -stop -start -logs-f -attach
+
+Dockerfile
+
+	Instruções
+
+Fazendo Build
+
+Enviando para nuvem
+
+
+
+
+
+
+
+
+
+
+
+>Conteudo em video
+
+Caio Delgado -Curso Docker DCA 100% Free 15videos ~34hrs 
+https://www.youtube.com/playlist?list=PL4ESbIHXST_TJ4TvoXezA0UssP1hYbP9_
+
+Live do Somatorio e Mundodocker - Docker Básico
+https://youtu.be/-vU1f2Wgng4
+
+LinuxTips - Semana Docker 1.13 de 2017
+https://www.youtube.com/playlist?list=PLf-O3X2-mxDl1MmPBqi6NTterDstwoGWr
+
+
+
+>Livros
+https://github.com/gomex/docker-para-desenvolvedores
+
+https://github.com/badtuxx/DescomplicandoDocker
+
+https://livro.descomplicandodocker.com.br/chapters/chapter_00.html
+
+>Sites
+mundoDocker
+https://www.mundodocker.com.br/
+
+Play with Docker classroom
+https://training.play-with-docker.com/
+
+https://docs.docker.com/get-started/resources/
+
+https://renatogroffe.medium.com/play-with-docker-ambiente-online-e-gratuito-para-testes-com-containers-43c227a85b1b
+
+https://www.docker.com/resources/what-container/
+
+porque docker?
+https://www.docker.com/why-docker/
+
+https://www.redhat.com/pt-br/topics/containers/what-is-docker
+
+
+https://www.redhat.com/pt-br/topics/containers
+
+https://stack.desenvolvedor.expert/appendix/docker/oquee.html
+
+https://12factor.net/pt_br/
+
+https://docs.microsoft.com/pt-br/dotnet/architecture/microservices/container-docker-introduction/docker-defined
+
+
+>>Referencia:
+
+https://gomex.me/blog/primeiros_passos_devops/
+
+https://docs.google.com/presentation/d/19YEP02Ck6lSp_ZaQ94UAWazuA28mrJ6IcIcScXJuAXs/edit#slide=id.g11d2e28f2b_0_1275
+
+https://blog.4linux.com.br/docker-beginners/
+
+https://www.ctl.io/developers/blog/post/what-does-docker-1-0-mean-for-the-community
+
+https://collabnix.com/get-started-with-docker/
+
+https://dockerlabs.collabnix.com/beginners/docker/what-is-docker.html
+
+https://collabnix.com/what-is-a-dockerfile-a-step-by-step-guide/

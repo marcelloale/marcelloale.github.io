@@ -1,0 +1,98 @@
+Computação em nuvem
+
+A computação em nuvem (cloud computing) é um conceito na área de tecnologia que diz respeito à disponibilização de recursos computacionais e serviços através da internet. Por isso, todos os serviços que ficam hospedados na nuvem podem ser acessados remotamente a qualquer hora e de qualquer lugar.
+
+-
+Caractericas
+
+Assim, as cinco características basicas de Computação em Nuvem são:
+
+-Serviço self-service: habilidade de usufruir de recursos computacionais (por exemplo, memória, armazenamento e processamento) e outros serviços de maneira fácil e a serviço do cliente, no qual ele consome, provisiona e monitora seus recursos;
+-Amplo acesso à rede: habilidade de utilizar uma ampla rede que pode ser acessada por diversos usuários em diversas regiões. Geralmente com conexão à internet para alcançá-las, deve-se levar em consideração a banda-larga da conexão e também a latência que o negócio (a empresa) está disposto a negociar ou não;
+-Pool de recursos: um grande repositório de recursos é necessário para fazer a computação em nuvem entregar tudo o que ela se propõe a entregar; um agrupamento de recursos se faz necessário para disponibilizar de maneira eficiente recursos computacionais para diferentes necessidades que o usuário possa vir a ter, usando-os da melhor maneira possível;
+-Rápida elasticidade: capacidade de redimensionar os recursos computacionais (CPU, memória e armazenamento) de forma manual ou automática de acordo com a demanda de acesso aos serviços disponibilizados na nuvem. É muito recomendada, por exemplo, em períodos de picos de acesso, como na Black Friday;
+-Serviço medido: habilidade de se medir e monitorar o que está sendo consumido na nuvem. Esta medição ajuda na adequação destes recursos, sendo possível ajustá-los de acordo com a demanda.
+
+-
+
+Beneficios
+
+O agrupamento de recursos, a escalabilidade e os serviços medidos são algumas das características e também alguns dos benefícios que esse modelo traz, alem de outros benefícios como:
+
+-Alta Disponibilidade: os recursos estão sempre disponíveis, uma vez que estes são redundantes e podem estar disponíveis em diferentes regiões (do mundo!);
+-Agilidade: agilidade de provisionamento, implementação e modelo de consumo. Não há nada mais frustrante para equipes de desenvolvedores que querem implementar uma nova funcionalidade, produto ou aplicação e não ter os recursos de infraestrutura disponíveis (imagina reduzir o provisionamento de semanas para apenas algumas horas! Incrível, né!?);
+-Distribuição geográfica: empresas que atendem mercados globais conseguem se beneficiar da distribuição geográfica e expandida que os provedores de nuvens oferecem;
+-Recuperação de desastres: devido à redundância e à distribuição geográfica dos recursos, utilizar-se dos serviços de nuvem faz com que os dados e workloads em determinada região possa ser efetivamente restituído e salvo em outra região, diminuindo os riscos e auxiliando na continuidade do negócio;
+-Modelo OpEx (Operational Expenses, em inglês, ou gastos operacionais, em português): ao invés da empresa comprar servidores e maquinário e colocá-los em um centro de dados (que também tem um custo de aluguel, energia, manutenção, luz, etc), o modelo de consumo de nuvem é menos complexo: a empresa não precisa ter um centro de dados físico e somente paga pelo que consome. O custo desse consumo é alocado na coluna de custos operacionais no balanço financeiro e não há depreciação dos ativos como no modelo de CapEx (Capital Expenses), em que o dinheiro de uma organização é investido em adquirir, manter e aprimorar ativos fixos de uma empresa, tais como: equipamentos, maquinários, fábricas, tecnologia, entre outros.
+
+*constraints=restrições
+-
+
+
+A Computação em Nuvem é um tema que está em constante evolução e evidência devido à grande transformação digital que as organizações vêm passando.
+
+A cloud computing vem transformando a maneira como as empresas da área de TI constroem as arquiteturas de suas soluções.
+muitos dos serviços que elas desejam entregar aos seus clientes precisam ser feitos de maneira ágil e escalável, e a nuvem é uma ótima alternativa para atender a essa demanda, pois, através dela, é possível obter recursos computacionais com mais rapidez e menos custos com manutenção e infraestrutura.
+
+-
+
+A escolha do data center ser na nuvem, on-premisses ou nos dois modelos depende de vários fatores, como custos, atos regulatórios, modelo do negócio, entre outros.
+
+Escolha a se fazer imagem
+
+-
+
+Um ponto interessante de abordar é que não são só empresas de tecnologia que vêm migrando para cloud. Vemos também empresas de diversos setores levando suas aplicações e serviços, que também são conhecidos como workloads, para a nuvem.
+imagem:
+S=software, F=Function, D=Device(Dispositivo), P=Platform, ST=Storage, I=Infraestrutura
+
+Comentar sobre a utilização do usuario final
+
+-
+
+os cloud providers são responsáveis por fazer a gestão e sustentação da infraestrutura e dos serviços oferecidos, enquanto os usuários pagam pelo tipo de recurso e tempo que usam, sem se preocupar com custos de equipamentos físicos como no modelo on premise.
+
+ranks de 2021 do lideres de acordo com imagem
+
+Por existirem diversos provedores, é comum termos no mercado diversos casos de uso. Existem empresas que escolhem migrar seus ambientes exclusivamente para um provedor, em contrapartida, principalmente nos últimos anos, a estratégia multi cloud vem ganhando bastante força, pois nesse modelo, as organizações passam a usar mais de um provedor de nuvem pública e às vezes, também podem vir a utilizar uma cloud privada em conjunto, tudo isso com o intuito de ter arquiteturas altamente disponíveis, flexíveis e com um bom custo-benefício.
+
+-
+
+Modelo de implantação
+
+Nuvens privadas: A nuvem privada é uma arquitetura de data center que geralmente tem recursos exclusivos de uma empresa. Ela pode ser implantada diretamente pela empresa ou esta pode solicitar um serviço de um provedor de data center. Esse modelo é recomendado, por exemplo, para armazenar informações críticas e confidenciais.
+
+Nuvens públicas: Nesse modelo, os serviços são disponibilizados em um ambiente virtualizado que pode ser acessado pela internet. Geralmente oferecem bastante escalabilidade. Alguns provedores de nuvem pública mais conhecidos são: o Azure (Microsoft), Google Cloud Platform (GCP), Amazon Web Services (AWS), entre outros.
+
+Nuvens híbridas: Esse modelo é a junçāo dos dois modelos citados acima (público e privado), na qual empresas possuem o data center privado (nuvem privada) e também o data center na nuvem pública.
+
+Um dos pontos positivos ao se utilizar um ambiente na nuvem, é que ele pode ser facilmente escalável.
+
+-
+
+Modelos de serviços
+
+PaaS — Plataform as a Service: Neste modelo, é possível ter um ambiente de desenvolvimento e implantação em cloud, e o gerenciamento do ambiente é feito completamente pelo provedor.
+Segundo uma definição da Microsoft, “assim como IaaS, PaaS inclui infraestrutura — servidores, armazenamento e rede –, além de middleware, ferramentas de desenvolvimento, serviços de BI (business intelligence), sistemas de gerenciamento de banco de dados e muito mais. PaaS é criado para dar suporte ao ciclo de vida do aplicativo Web completo: compilação, teste, implantação, gerenciamento e atualização”.
+Exemplos de Paas: Heroku, Tsuru, Open Shift Container Platform, Amazon Elastic Beanstalk, Oracle Cloud PaaS, entre outros.
+
+SaaS — Software as a Service: Neste modelo, é possível utilizar o software por meio da internet. O fornecedor fica responsável por toda a infra, segurança e disponibilidade da plataforma.
+Exemplos de SaaS: Google Drive, Google Analytics, Netflix, Salesforce, entre outros.
+
+IaaS — Infrastructure as a Service: Já neste modelo, ao invés de a empresa precisar adquirir recursos de infra, ela consegue adquirir os serviços necessários com servidores virtuais (VMs). Alguns fatores são levados em consideração no modelo de cobrança, como, por exemplo, a quantidade de dados armazenados, trafegados ou até mesmo a quantidade de servidores utilizados.
+Exemplos de IaaS: Compute Engine do GCP, EC2 da AWS, entre outros.
+
+FaaS — Functions as a Service: Por fim, com este modelo, é possível criar e executar aplicações sem ter que se preocupar em administrar servidores, pois o provedor de serviço em nuvem (AWS, GCP ou AWS) é o responsável por executar pequenos pedaços de código e alocá-lo nos recursos disponíveis de acordo com a demanda.
+O ponto positivo de utilizar este modelo é a facilidade do dimensionamento automático e a alta disponibilidade. A arquitetura Serverless é um exemplo de FaaS.
+Exemplos de FaaS: AWS Lambda, Cloud Functions e Azure Functions.
+
+
+-
+
+Comparação dos serviços da AWS, Azure e GCP
+
+Referencias:
+
+https://medium.com/sysadminas/guia-da-computa%C3%A7%C3%A3o-em-nuvem-conceito-pr%C3%A1tica-capacita%C3%A7%C3%A3o-706a8b7e555
+
+https://medium.com/sysadminas/computa%C3%A7%C3%A3o-em-nuvem-515930304cf9

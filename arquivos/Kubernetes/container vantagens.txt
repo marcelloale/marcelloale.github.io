@@ -1,0 +1,13 @@
+Os contêineres ficaram famosos porque oferecem vantagens adicionais, por exemplo:
+
+Criação e organização de aplicativos coordenados: simplicidade expandida e proficiência na criação de imagens de compartimentos em contraste com o uso de imagens de VM.
+Mudança consistente de eventos, incorporação e organização: acomoda a construção de imagem de titular confiável e sucessiva e envia reversões rápidas e produtivas (devido à natureza imutável da imagem).
+Separação de preocupações de desenvolvedores e operações: faça imagens do compartimento de aplicativos no momento de construção/descarga em vez de no momento do arranjo, desacoplando os aplicativos da fundação.
+A capacidade de discernimento apresenta dados e medições no nível do sistema operacional, mas também o bem-estar da aplicação e outros sinais.
+Consistência ecológica em melhorias, testes e criação: executa algo semelhante em um PC como na nuvem.
+Conveniência de dispersão de nuvem e SO: é executado no Ubuntu, RHEL, CoreOS, on-premises, névoas públicas significativas e em outros lugares.
+Administração orientada a aplicativos: aumenta o grau de deliberação da execução de um sistema operacional em equipamentos virtuais para a execução de um aplicativo em um sistema operacional utilizando ativos intelectuais.
+Administrações em miniatura inexatamente acopladas, circuladas, versáteis e liberadas: os aplicativos são divididos em partes mais modestas e autônomas e podem ser enviados e supervisionados progressivamente – não uma pilha sólida rodando em uma grande máquina de um único motivo.
+Segregação de ativos: execução de aplicativos sem surpresa.
+Uso de ativos: alta produtividade e espessura.
+

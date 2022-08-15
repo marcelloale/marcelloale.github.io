@@ -1,0 +1,195 @@
+---1
+IaC (Terraform, Ansible, Pulumi)
+
+O que é Infrastructure as Code (IaC)?
+
+---2
+
+A Infrastructure as Code é um modo de automatizar o provisionamento da infraestrutura de TI.
+
+A IaC (infraestrutura como código) é o gerenciamento da infraestrutura (redes, máquinas virtuais, balanceadores de carga e topologia de conexão) em um modelo descritivo, usando o mesmo controle de versão que a equipe de DevOps usa para o código-fonte.
+
+---3
+Seguindo o princípio de que o mesmo código-fonte gera o mesmo binário, um modelo de IaC gera o mesmo ambiente toda vez que é aplicado. O IaC é uma prática fundamental do DevOps usada em conjunto com a entrega contínua.
+
+Para a solução de software em nuvem eficiente e eficaz, é preciso seguir os princípios e práticas de DevOps:
+---4
+Os provedores de nuvem fornece uma maneira focada em DevOps de criar e manter infraestrutura e a Infraestrutura como código é um desses pontos principais para se conseguir automação, aqui a gente varias ferramentas usadas no devops para garatir essa automação seja na instalação, configuração, implantação e suporte de infraestrutura e aplicativos. 
+lembrando que o conceito de ser contínuo é centro de uma estratégia DevOps, onde seu objetivo principal é permitir a implantação automatizada de código pronto para produção.
+
+---5
+Benefícios da IaC
+Agilidade: A capacidade de automação da IaC acelera o processo de provisionamento de uma infraestrutura para desenvolver, testar e produzir aplicações. Permitindo a configuração de uma infraestrutura completa executando apenas um script. Assim possuindo os mesmos princípios seguidos na cultura DevOps no quesito da velocidade e consistência do ciclo de vida de entrega do projeto.
+---6
+Consistência: Com a automatização de processos oriundos da IaC, falhas e discrepâncias que seriam criadas por um processo manual são praticamente eliminadas. A infraestrutura como código tem a capacidade de evitar esses possíveis problemas, pois seus arquivos de configuração possuem apenas uma única fonte de informação, assim garantindo a possibilidade de realizar repetidas implantações de forma consistente e sem disparidade de informações.
+---7
+Segurança: Assim como todos os serviços de cloud computing, a IaC traz mais segurança para o ambiente de TI da sua empresa. As ferramentas de infraestrutura como código permitem a correção rápida de erros e a solução de problemas de forma automatizada, deixando assim uma infraestrutura mais segura e gerenciada pela empresa.
+
+---8
+
+Que ferramentas posso usar para trabalhar com IaC?
+
+As ferramentas mais populares pra se trabalhar com IaC são Terraform e AWS CloudFormation, mas existem muitas outras como Ansible, Azure Resource Manager, Google Cloud Deployment Manager, Chef, Otter, Puppet, etc.
+
+No link da imagem temos um artigo que explicação essa busca por automação
+
+
+---9
+ Declarativo
+Também é conhecido como funcional. A abordagem declarativa se preocupa com qual deve ser a configuração de destino final; A abordagem declarativa especifica o estado desejado e o sistema executa as ações necessárias para atingir esse estado .
+
+Imperativo
+A abordagem imperativa diz respeito a como a infraestrutura deve ser modificada para alcançar isso. Também pode ser chamado de procedural O imperativo especifica comandos particulares que devem ser executados na ordem correta para obter o resultado desejado .
+
+Existem quatro grandes categorias de ferramentas IAC:
+
+//Scripts ad hoc
+//Ferramentas de gerenciamento de configuração
+//Ferramentas de modelagem de servidor 
+//Ferramentas de provisionamento de servidores
+
+---10
+
+---11
+
+No momento a lider é a Terraform, em primeiro lugar, porque é uma ferramenta open source que pode ser usada com vários provedores, como AWS, Azure, GPC e diversos outros (em contra ponto com a AWS CloudFormation que é integrado à AWS e só funciona por lá). Ele também é relativamente fácil de usar (mesmo pra iniciantes), com uma notação simples (HCL, parecida com JSON).
+
+Nas palavras da HashiCorp, desenvolvedora e mantenedora do Terraform:
+“O Terraform é usado para criar, gerenciar e atualizar recursos de infraestrutura, como máquinas físicas, VMs, comutadores de rede, contêineres e muito mais. Quase qualquer tipo de infraestrutura pode ser representado como um recurso no Terraform.”
+
+O Terraform adota a abordagem declarativa para IaC com uma verificação de pré-execução para manter o resultado desejado .
+O Terraform às vezes é usado como uma ferramenta básica em conjunto com o Ansible. A natureza de código aberto se presta a ser altamente compatível com serviços em nuvem, como AWS, Google Cloud, Microsoft Azure e OpenStack.
+
+---12
+AWS CloudFormation
+O próprio CloudFormation da AWS é uma solução de IaC integrada que acompanha a plataforma e atende às necessidades e práticas recomendadas de DevOps. O CloudFormation é outra solução declarativa e, como o software trabalha especificamente com a infraestrutura da AWS em mente, a margem de erro é pequena ao trabalhar com a AWS. 
+As declarações são feitas usando YAML ou JSON e podem funcionar a partir de templates. O CloudFormation também possui um recurso Rollback Trigger que reverte automaticamente para um estado de trabalho em caso de erros.
+
+---13
+Azure Resource Manager
+O Microsoft Azure possui sua própria ferramenta IaC integrada ao seu sistema. Um dos benefícios mais comentados do ARM(AzureRM) é que ele é fácil de usar. A facilidade de uso é um forte ponto de venda para um IaC, que são sistemas bastante complexos. No entanto, talvez seja necessário aprender alguma terminologia específica para ARM. Outro recurso vital do ARM é o gerenciamento de funções e o gerenciamento de recursos, dois recursos integrantes do design que facilitam a alocação de recursos.
+
+---14
+Google Cloud Deployment Manager
+O gerenciador de implantação do Google Cloud usa uma linguagem declarativa YAML e Python para descrever o destino e permite que o sistema descubra como chegar lá . O GCDM foi projetado para escala e possui recursos para expandir e implantar recursos adicionais rapidamente. O GCDM também tem alta compatibilidade com recursos de terceiros e uma extensa API externa. Alguns usuários reclamam da falta de um recurso de reversão , citando sua necessidade. 
+
+---15
+Pulumi
+Pulumi é uma ferramenta mais recente em IaC e tenta uma abordagem mais moderna com definição de código real. Ao contrário de outras ferramentas que usam ferramentas Python, YAML, JSON ou Ruby, o Pulumi aproveita linguagens de programação poderosas, como C#, Python, Go e JS ao codificar instruções. Isso a torna a única ferramenta que é genuína Infraestrutura como Código, em vez de baseada em definições. Por ser novo, é difícil dizer se vai conduzir um padrão moderno ou simplesmente ser uma alternativa. Já está ganhando popularidade, então vale a pena conferir.
+
+
+-videos
+
+DevOps or Site Reliability Engineering (SRE) do Google
+https://youtube.com/playlist?list=PLIivdWyY5sqJrKl7D2u-gmis8h9K66qoj
+
+Cloud na Prática- Fernando Gonçalves
+https://www.youtube.com/watch?v=kj1Aobntvn8
+
+LinuxTips - Jeferson Fernando
+https://www.youtube.com/watch?v=lrAycU7_XnQ
+
+Terraform 101 - Instalação e Deploy AWS EC2 - Caio Delgado
+https://youtu.be/bYvdJKTwx_I
+
+-livros
+
+
+-sites
+
+https://linkedin.github.io/school-of-sre/
+
+Ansible
+http://ansible-br.org/primeiros-passos/materiais-de-estudo/cursos/
+
+--Referencias
+
+https://www.novatec-gmbh.de/en/blog/understanding-infrastructure-as-code-iac-in-less-than-10-minutes/
+
+oque é
+https://docs.microsoft.com/pt-br/devops/deliver/what-is-infrastructure-as-code
+
+https://medium.com/sysadminas/infrastructure-as-code-42537d03e021
+
+figura do ecossistema
+https://www.dinamize.com.br/blog/iac-infrastructure-as-code/
+
+beneficios
+https://www.darede.com.br/o-que-e-infrastructure-as-code-iac/
+
+https://www.darede.com.br/infraestrutura-como-codigo-como-automatizar-o-provisionamento-de-servicos-na-nuvem/
+
+exemplo terraform
+https://medium.com/digitalproductsdev/organizando-sua-infraestrutura-como-c%C3%B3digo-com-terraform-df6ca70d8eb
+
+ferramentas
+https://anneglienke.medium.com/o-que-%C3%A9-infraestrutura-como-c%C3%B3digo-iac-perspectiva-de-iniciante-80b124d1cb84
+
+ansible
+https://medium.com/venturus/infraestrutura-como-c%C3%B3digo-cf68fbc15ec2
+
+atividades repetitivas
+https://medium.com/@ari_neto/https-medium-com-ari-neto-por-que-infraestrutura-como-codigo-e-importante-1c85069239e8
+
+terraform Caio Delgado
+https://caiodelgado.dev/terraform-101/
+
+instancia ec2 terraform
+https://thecloudbootcamp.com/pt/blog/aws/criando-uma-instancia-ec2-utilizando-o-terraform/
+
+instancia ec2 
+https://amaurybsouza.medium.com/terraform-e364f5d31570
+
+
+https://www.alura.com.br/artigos/criando-o-primeiro-ambiente-com-terraform
+
+https://www.linkedin.com/pulse/criando-uma-infraestrutura-terraform-aws-felipe-t-l-p-santos/?originalSubdomain=pt
+
+site da terraform
+https://learn.hashicorp.com/tutorials/terraform/aws-build
+
+
+dar uma olhada
+https://leonardo-matsumota.com/2018/08/05/infrastructure-as-code-beneficios-e-ferramentas-como-azure-resource-manager/
+
+
+docs aws
+https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/infrastructure-as-code.html
+
+
+olhar ingles
+https://www.sourcefuse.com/portfolio/infrastructure-as-code-aws/
+
+ingles acho semelhante ao primeiro site mas bem mais completo
+https://cloud.netapp.com/blog/infrastructure-as-code-on-aws-5-tips-to-get-you-started-cvo-blg
+
+explicacao de como funciona em ingles
+https://spectralops.io/blog/how-does-infrastructure-as-code-on-aws-work/
+
+https://spectralops.io/blog/top-10-infrastructure-as-code-iac-tools-to-know-in-2022/
+
+docs da amazon em ptbr sobre cloudFormation
+https://docs.aws.amazon.com/pt_br/AWSCloudFormation/latest/UserGuide/Welcome.html
+
+como criar uma template yaml para cloudFormation
+https://rodolfombc.medium.com/criando-um-template-yaml-do-cloudformation-do-zero-b268504ac979
+
+tutorial em ptbr sobre aws cloudformation
+https://www.clouddog.com.br/blog/introducao-ao-aws-cloudformation/
+
+exemplos de cloudFormation e ec2s
+https://octopus.com/blog/aws-cloudformation-ec2-examples
+
+bem mais completo mais em ingles
+https://blog.boltops.com/2017/03/06/a-simple-introduction-to-aws-cloudformation-part-1-ec2-instance/
+
+Exemplos:
+ensina tudo escrito desde criar conta ate o terraform
+https://caiodelgado.dev/terraform-101/
+
+CloudFormation pt-BR
+https://youtu.be/xfiW3u4vR7U
+
+
+PROVISIONANDO AWS com o TERRAFORM | PROJETO DEVOPS #3 - Matheus Muller
+https://youtu.be/w3k2yuPEU_w

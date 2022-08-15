@@ -1,0 +1,172 @@
+#K8s
+--1
+--2
+
+Kubernetes é um orquestrador de containers, isso quer dizer que ele é responsável por iniciar o container e prover todas as funcionalidades necessárias para ele funcionar corretamente. Tal como guardar segredos, configurações, localização de containers por nome, agrupamento por tags, alta disponibilidade, escalabilidade e afins.
+A palavra Kubernetes significa piloto de navio, então pense em Kubernetes como o piloto de um navio de contêineres.
+O Kubernetes também é conhecido de forma abreviada como k8s, pois existem 8 caracteres entre k e s
+
+--3
+
+E De onde veio isso?
+
+Inspirado no Google Borg System, um gerenciador de contêineres para suas operações globais há mais de uma década.
+É antes mesmo do fenomeno Docker se tornar altamente popular o Google estava executando a maioria dos serviços, como pesquisa, Gmail, Google File System, etc., em contêineres.
+Entao o Google usava o Borg para gerenciar o cluster de contêiner um tempo depois eles usaram o Omega e hoje usam o Kubernetes para toda sua Orquestração.
+Embora tenha algumas ideias do Borg e do Omega o Kubernetes foi construido totalmente do zero.
+
+--4
+
+Ele foi Escrito em Go/Golang
+por Joe Beda, Brendan Burns e Craig McLuckie eles tiveram ajudam de outros engenheiros da Google no processo,
+e foi anunciado pelo Google em meados de 2014 seu codinome no Google era Project Seven uma referencia a StarTreck
+O Kubernetes v1.0, foi lançado em 21 de julho de 2015 junto com a parceria da Linux Foundation para formar a Cloud Native Computing Foundation que tem como base oferecer o kubernetes como tecnologia.
+
+--5
+
+Entao o que é mesmo que kubernetes orquestra?
+
+Bem containers sao uma inovação que permite ao cliente dividir uma máquina para rodar mais de uma aplicação, mantendo o descompasso entre as responsabilidades. Os containers(Compartimentos) são um método avançado para virtualização, uma metodologia mais leve do que as máquinas virtuais convencionais: ver imagem.
+
+--6
+
+Um arranjo funcional do Kubernetes é conhecido como cluster. Você pode imaginar um grupo de Kubernetes como duas seções: o plano de controle e as máquinas, ou hubs.
+
+Cada hub tem ali seu ambiente Linux e pode ser tanto uma máquina física quanto uma virtual. Cada hub executa units, que são compostas por compartimentos.
+(systemd utiliza arquivos de unidades[units] de tempo chamados de “Timers” que controlam os serviços ou eventos que serão executados pelo systemd)
+
+O plano de controle é responsável por acompanhar a condição ideal do grupo, por exemplo, quais aplicativos estão rodando e quais imagens de suporte eles utilizam. Se as Máquinas realmente executam os aplicativos e responsabilidades.
+
+O Kubernetes é executado em cima de uma estrutura de trabalho (Red Hat® Enterprise Linux®, por exemplo) e se associa a casos de compartimentos executados nos hubs.
+
+O plano de controle do Kubernetes recebe os pedidos de um presidente (ou grupo de DevOps) e transfere essas direções para as máquinas de registro.
+
+Este handoff trabalha com um grande número de administrações para, consequentemente, escolher qual hub é mais adequado para a atribuição. Ele então, nesse ponto, distribui ativos e distribui as unidades naquele hub para satisfazer o trabalho mencionado.
+
+A condição ideal de um grupo Kubernetes caracteriza quais aplicativos ou responsabilidades diferentes devem ser executados, juntamente com quais imagens eles usam, quais ativos devem ser disponibilizados a eles e outras sutilezas de arranjo.
+
+De acordo com uma perspectiva de estrutura, há pouca mudança em como você supervisiona os compartimentos. Sua autoridade sobre os detentores ocorre simplesmente em um nível mais significativo, oferecendo melhor controle sem a necessidade de microgerenciar cada contêiner ou hub diferente.
+
+Seu trabalho inclui projetar Kubernetes e caracterizar hubs, unidades e os compartimentos dentro deles. O Kubernetes lida com a organização dos compartimentos.
+
+Onde você executa o Kubernetes depende de você. Isso pode ser em metalúrgicos descobertos, máquinas virtuais, fornecedores de nuvem pública, névoas privadas e condições de nuvem mista. Um dos principais benefícios do Kubernetes é que ele lida com vários tipos de frameworks.
+
+[imagem]
+Automação:
+-Configuração
+-Provisionamento
+-Disponibilidade
+-Escalabilidade
+-Segurança
+-Alocação de Recurso
+-Balaceamento de carga
+-Monitoramento
+
+--7
+
+Definições básicas do Kubernetes
+Conjunto
+Um monte de hubs que executam aplicativos em contêiner supervisionados pelo Kubernetes.
+
+Cápsula
+Um Pod reúne pelo menos um contêiner, com recursos compartilhados de capacidade e organização e uma determinação de como executar os detentores. As substâncias de um Pod são consistentemente co-fundadas e co-reservadas e executadas em um ambiente comum. Um Pod modela um “host sensível” explícito de aplicativo: ele contém pelo menos um compartimento de aplicativo, que é moderadamente firmemente acoplado. Em configurações sem nuvem, os aplicativos executados em uma máquina física ou virtual semelhante são indiferenciados dos aplicativos de nuvem executados em um host inteligente semelhante.
+
+Nó mestre
+aka avião de controle
+
+A camada de arranjo fornece interfaces para caracterizar, enviar e lidar com o ciclo de vida dos detentores.
+
+Nó do trabalhador
+Cada hub do trabalhador pode ter aplicativos como titulares. Um grupo de Kubernetes normalmente tem vários hubs de trabalhadores (algo em torno de um).
+
+Servidor de interface de programação
+O segmento essencial do plano de controle descobriu a API do Kubernetes, capacitando as correspondências entre os segmentos de grupo.
+
+Controlador
+Um daemon do plano de controle que rastreia a condição do grupo e implementa todas as melhorias fundamentais para que o grupo chegue ao seu estado ideal.
+
+Tempo de execução do contêiner
+Este é o produto responsável pela movimentação de contêineres.
+
+O Kubernetes suporta alguns runtimes de titular: Docker, containers, CRI-O e qualquer execução do Kubernetes CRI (Container Runtime Interface).
+
+Kubelet
+Um especialista que aumenta repentinamente a demanda para todos os hubs do grupo. Ele garante que os titulares estejam sendo executados em um Pod.
+
+O kubelet pega um monte de PodSpecs que são dados através de diferentes instrumentos e garante que os titulares descritos nesses PodSpecs estão funcionando e são bons. O kubelet não supervisiona os titulares que o Kubernetes não fez.
+
+KubectlGenericName
+O aparato de linha de pedidos do Kubernetes, kubectl, permite que você execute pedidos contra grupos do Kubernetes. Você pode utilizar o kubectl para enviar aplicativos, avaliar e supervisionar ativos de grupo e visualizar logs.
+
+Kubeproxy
+Kube-intermediary é um intermediário da organização que aumenta repentinamente a demanda para cada hub do seu grupo, realizando uma parte da ideia do serviço Kubernetes.
+
+Kube-intermediary acompanha as regras de rede nos hubs. Essas regras de organização permitem a correspondência de rede com seus Pods de reuniões de rede dentro ou fora de seu grupo.
+
+Kube-intermediary utiliza a camada de triagem de pacote de estrutura de trabalho, caso haja uma, e é acessível. Outra coisa, o intermediário Kube avança o tráfego real.
+
+CNI
+O Container Network Interface é uma determinação e um conjunto de aparatos para caracterizar interfaces de organização entre fornecedores de rede e Kubernetes.
+
+CSI
+A Container Storage Interface é específica para dispositivos e aplicativos de armazenamento de informações a serem incorporados a grupos do Kubernetes.
+
+--8
+Image da estrutura do k8s
+--9
+
+Divulgação da administração e ajuste de encargos:
+O Kubernetes pode descobrir um titular utilizando o nome DNS ou utilizando seu próprio endereço IP. Se o tráfego para um compartimento for alto, o Kubernetes pode ajustar a pilha e transmitir o tráfego da organização, para que o envio seja constante.
+
+Coordenação de capacidade:
+O Kubernetes permite que você monte naturalmente um arranjo de capacidade de sua decisão, como estoques de bairro, fornecedores de nuvem pública, e o céu é o limite a partir daí.
+
+Rollouts e rollbacks mecanizados:
+Você pode descrever o estado ideal para seus compartimentos enviados utilizando o Kubernetes e pode alterar o estado genuíno para o estado ideal a uma taxa controlada. Por exemplo, você pode informatizar o Kubernetes para criar novos compartimentos para seu envio, eliminar os titulares existentes e receber cada um de seus ativos no novo compartimento.
+
+Prensagem programada do recipiente:
+Você fornece ao Kubernetes um grupo de hubs que ele pode usar para executar atribuições em contêiner. Você divulga ao Kubernetes a quantidade de CPU e memória (RAM) que cada compartimento precisa. O Kubernetes pode encaixar compartimentos em seus hubs para utilizar seus ativos.
+
+Auto-recuperação:
+O Kubernetes reinicia os titulares que falham substituindo os compartimentos, mata os compartimentos que não reagem à verificação de bem-estar caracterizada pelo seu cliente e não os divulga aos clientes até que estejam preparados para servir.
+
+Mistério e design os executivos:
+O Kubernetes permite armazenar e supervisionar dados delicados, como senhas, tokens OAuth e chaves SSH. Você pode transmitir e atualizar insights privilegiados e configuração de aplicativos sem reconstruir suas imagens de compartimento sem descobrir mistérios em seu arranjo de pilha.
+
+
+--videos
+
+Vídeo sobre Kubernetes - Caio Delgado
+https://youtu.be/PPBjWvUSgSE
+
+Curso de Introdução ao Kubernetes - Paulo Antonio Leal Rego (UFC 2019)
+https://www.youtube.com/playlist?list=PLXzx948cNtr8XI5JBemHT9OWuYSPNUtXs
+
+Live do Esquenta AvançaDev - Canal Full Cycle
+https://www.youtube.com/watch?v=5unI7VPnASM
+
+Kubernetes Crash Course for Absolute Beginners - Nana Janashia
+https://youtu.be/s_o8dwzRlu4
+
+
+--sites
+
+https://linkedin.github.io/school-of-sre/
+
+https://medium.com/the-programmer/kubernetes-fundamentals-for-absolute-beginners-architecture-components-1f7cda8ea536
+
+https://github.com/jseguillon/kubemoji
+
+--livros
+Descomplicando Kubernetes da Linuxtips
+https://livro.descomplicandokubernetes.com.br/pt/
+
+--Referencias
+
+https://dockub.rootrwx.com/kubernetes.html
+
+https://www.wallarm.com/what/what-is-kubernetes-container-orchestration-platform
+
+https://phoenixnap.com/kb/what-is-kubernetes
+
+https://www.opservices.com.br/o-que-e-kubernetes/

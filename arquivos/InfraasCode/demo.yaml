@@ -1,0 +1,38 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Description: Template to create a simple instance and Enable SSH.
+
+Parameters:
+  KeyName:
+    Description: Name of SSH KeyPair 
+    Type: 'AWS::EC2::KeyPair::KeyName'
+    ConstraintDescription: Provide the name of an existing SSH KeyPair
+
+Resources:
+  MyEC2Instance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-04d29b6f966df1537
+      KeyName: !Ref KeyName
+      SecurityGroups:
+        - !Ref InstanceSecurityGroup
+      Tags:
+        - Key: Name
+          Value: DemoCF
+
+InstanceSecurityGroup: 
+  Type: 'AWS::EC2::SecurityGroup'
+  Properties:
+    GroupName: MyDMZSecurityGroup 
+    GroupDescription: Enable SSH access via port
+    SecurityGroupIngress:
+      IpProtocol: tcp 
+      FromPort: 22
+      ToPort: 22
+      CidrIp: 0.0.0.0/0
+
+Outputs:
+  InstanceID:
+    Description: InstanceID
+    Value: !Ref MyEC2Instance

@@ -1,0 +1,3 @@
+
+motivos
+Terraform porque é muito fácil de aprender, é apoiado pela Hashicorp, você pode testar antes de aplicar na produção, cheira a limão e Zebry gosta (ok não esse último :v) . Use YAML, existem plugins vim, vs código para escrever os arquivos tf.
