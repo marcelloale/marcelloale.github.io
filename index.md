@@ -1,4 +1,4 @@
-# Bem vindo ao Repositorio do Grupo de Estudos sobre ferramentas de DevOps
+# Bem vindo ao Repositorio do Grupo
 
 ## Linux
 
