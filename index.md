@@ -1,5 +1,9 @@
 # Bem vindo ao Repositorio do Grupo
 
+## DevOps
+
+[Pasta sobre DevOps](https://github.com/marcelloale/marcelloale.github.io/tree/main/arquivos/DevOps)
+
 ## Linux
 
 [Pasta sobre Linux](https://github.com/marcelloale/marcelloale.github.io/tree/main/arquivos/Linux)
