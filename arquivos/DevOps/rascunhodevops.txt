@@ -76,17 +76,20 @@ O processo
 -GEMUD e segurança continua: Gestão de mudança e segurança da informação não deixar por ultimo, ser trabalho ao longo da jornada e do desenvolvimento, desenvolver e testar ao mesmo tempo na esteira
 
 -- 13 --
-A integração contínua (CI, continuous integration) e a entrega contínua (CD, continuous delivery) são práticas da engenharia de software que visam a testar e disponibilizar o software de forma automatizada, contínua e consistente (DESTRO; FRANÇA, 2019). Essas ações são aplicadas a projetos de desen-volvimento de software, com o intuito de manter o nível de qualidade elevado, a estabilidade da aplicação e propiciar uma menor quantidade de erros. Essas práticas são fixadas em um conjunto, intitulado pipeline, e organi-zadas de forma lógica e sequencial, conforme a Figura 2.
+A integração contínua (CI, continuous integration) e a entrega contínua (CD, continuous delivery) são práticas da engenharia de software que visam a testar e disponibilizar o software de forma automatizada, contínua e consistente (DESTRO; FRANÇA, 2019). Essas ações são aplicadas a projetos de desenvolvimento de software, com o intuito de manter o nível de qualidade elevado, a estabilidade da aplicação e propiciar uma menor quantidade de erros. Essas práticas são fixadas em um conjunto, intitulado pipeline, e organizadas de forma lógica e sequencial, conforme a Figura 2.
 
 -- 14 --
+Para entender o CD é preciso entender os tipos de servidores. O primeiro tipo é o servidor de teste, que possui recursos limitados e é utilizado para realizar os testes de forma mais controlada. O segundo é o servidor de (aceitação)homologação, que é basicamente uma cópia do servidor de produção, possuindo integração com todas as APIs (application programming interface; ou interface de programação de aplicações, em português) utilizadas. Com isso, os testes são realizados de forma mais fidedigna. Por fim, tem-se o servidor de produção, que se refere ao ambiente final que é acessado pelos usuários. 
+
+-- 15 --
 Pipeline que é uma palavra em ingles que no significado ao pé da letra é encanamento, aqueles tubos no supermario
 mas o termo é utilizado na industria/mercado como conjunto de instruções ou uma ESTEIRA de processos ou comandos que alguém ou algo deve seguir sempre, por exemplo uma pipeline de vendas, onde tem sempre os passos e estratégias a serem seguidas.
 No mundo de desenvolvimento uma pipeline(esteira) é desenvolvida e pensada como uma forma de reduzir trabalhos manuais do nosso dia a dia
 : seja para testar novos codigos, quando ocorre grandes mudanças no projeto, em teste de ferramentas necessarias, ou como validação da alteração 
-então em um projeto onde varias pessoas trabalhando ao mesmo tempo de forma independente com esse processo temos uma economia de tempo
+então em um projeto onde varias pessoas estao trabalhando ao mesmo tempo de forma independente com esse processo é possivel alcançar uma economia de tempo
 concluindo uma pipeline(esteira) é esse conjunto de instruções, passos a serem executados de forma sequencial
 
--- 15 --
+-- 16 --
 Para criar uma pipeline você precisa ter uma visão em detalhe da aplicação,do projeto, empresa, realmente conhecer bem para conseuir definir o tipo que será implatado pois existe diversos cenarios.
 porem temos varias ferramentas que auxiliam/são utilizadas nesse processo
 :muitas dessas que oferecem serviços de repositório 
@@ -99,13 +102,37 @@ Bitbucket Pipelines — https://bitbucket.org/product/br/features/pipelines
 -Travis — https://travis-ci.org/
 -Jenkins — https://www.jenkins.io/
 
+-- 17 --
+Plano: gestão de tarefas, horários
+Código: desenvolvimento e revisão de código, ferramentas de gestão do código fonte, fusão de código
+Build: ferramentas de integração contínua, ferramentas de controle de versões, estado(historico) de construção
+Teste: ferramentas de teste contínuo que fornecem feedback sobre os riscos empresariais, determinam o desempenho
+Pacotamento: repositório de artefactos, fase de pré-entrega da aplicação
+O que vai ser lançado(realeases): gestão do que alterado, aprovações de lançamento, automatização de lançamento
+Operacional: instalação de infra-estruturas, alterações de infra-estruturas (escalabilidade), configuração e gestão de infra-estruturas, infra-estruturas como código, planejamento de capacidade, gestão de capacidade e recursos, verificação de segurança, implantação de serviços, garantia de alta disponibilidade (HA), recuperação de dados, gestão de log/backup, gestão de bases de dados
+Monitoramento: monitoramento do desempenho do serviço, monitoramento dos logs, tambem a parte da experiência do usuario final, gestão de incidentes(suporte, SAQ)
 
+-- 18 --
 
-
-------------
 A carreira
 
-falar
+falar e encerramento
+-- 19 --
+
+Site Reliability Engineering
+
+Devops Engineer
+SRE Engineer
+DevSecOps
+Systems Engineer (SRE/DevOps)
+Cloud Engineer
+Especialista
+Analista
+Tech Manager SRE/DevOps 
+Pessoa Instrutora DevOps
+Consultor Cloud DevOps
+-fonte Glassdoor
+
 
 ---links
 
@@ -129,20 +156,6 @@ TechWorld with Nana
 
 mercado
 https://tutano.trampos.co/13658-guia-de-profissoes-devops/#:~:text=O(a)%20profissional%20de%20DevOps,atenda%20as%20necessidades%20dos%20clientes.
-
-
-DevSecOps
-
-SRE Engineer
-Devops Engineer
-Systems Engineer (SRE/DevOps)
-Cloud Engineer
-Especialista
-Analista
-Tech Manager SRE/DevOps 
-Pessoa Instrutora DevOps
-Consultor Cloud DevOps
--fonte Glassdoor
 
 
 https://awari.com.br/guia-devops/
