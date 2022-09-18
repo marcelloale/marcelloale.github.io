@@ -188,3 +188,6 @@ https://app.minhabiblioteca.com.br/books/9786556901725
 
 O que é uma pipeline para desenvolvimento de softwares: para iniciantes
 https://thihenos.medium.com/o-que-%C3%A9-uma-pipeline-para-desenvolvimento-de-softwares-para-iniciantes-9fc26150178e
+
+DevOps github
+https://resources.github.com/devops/
