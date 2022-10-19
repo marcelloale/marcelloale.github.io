@@ -1,4 +1,6 @@
-# Bem vindo ao Repositorio do Grupo
+# Bem vindo ao antigo Repositorio do Grupo
+
+[Link para o Site novo do Grupo](https://marcelloale.github.io/devopsufc)
 
 ## DevOps(Cultura, Processo, Carreira)
 
